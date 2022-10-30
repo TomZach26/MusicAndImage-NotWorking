@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="Music Volume:"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<SeekBar
+    android:id="@+id/sb"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="#177ee6"></SeekBar>
+<Switch
+    android:id="@+id/switch1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:checked="true"
+    android:enabled="true"
+    android:minHeight="48dp"
+    android:scaleX="1.5"
+    android:scaleY="1.5"
+    android:showText="false"
+    android:text="start/stop"
+    tools:checked="true">
+</Switch>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/rickroll_image" />
+
+</LinearLayout>
